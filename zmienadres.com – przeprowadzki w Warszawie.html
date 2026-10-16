@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>zmienadres.com – przeprowadzki w Warszawie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--ink:#14213d;--muted:#55607a;--line:#d9dde6;--tape:#f2b705;--on-tape:#14213d;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626;--surface:#18223a;--ink:#eef1f8;--muted:#a3adc4;--line:#2b3757;--tape:#f2b705;--on-tape:#14213d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1626;--surface:#18223a;--ink:#eef1f8;--muted:#a3adc4;--line:#2b3757;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px;text-decoration:none}
+.logo span{background:var(--tape);color:var(--on-tape);padding:0 6px;border-radius:3px}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+nav a:hover,nav a:focus-visible{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:36px 0 64px}
+h1{font-size:clamp(36px,6vw,64px);line-height:1.02;margin:0 0 18px;font-weight:800;letter-spacing:-.02em}
+.lead{color:var(--muted);max-width:46ch;margin:0 0 22px}
+.tape{height:10px;background:repeating-linear-gradient(135deg,var(--tape) 0 14px,var(--ink) 14px 28px);border-radius:2px;margin-bottom:22px;max-width:220px}
+.calc{background:var(--surface);border:2px solid var(--ink);border-radius:10px;padding:24px}
+.calc h2{margin:0 0 16px;font-size:22px}
+label{display:block;font-weight:600;font-size:15px;margin:14px 0 6px}
+select,input[type=number],input[type=text],input[type=tel],textarea{width:100%;padding:11px 12px;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px}
+.chk{display:flex;gap:10px;align-items:center;margin-top:14px;font-weight:600}
+.chk input{width:20px;height:20px;accent-color:var(--tape)}
+:focus-visible{outline:3px solid var(--tape);outline-offset:2px}
+.result{margin-top:20px;padding:16px;background:var(--tape);color:var(--on-tape);border-radius:8px}
+.result b{font-size:30px;display:block;line-height:1.1}
+.result small{display:block;margin-top:4px;opacity:.85}
+.btn{display:inline-block;margin-top:16px;background:var(--ink);color:var(--bg);font:inherit;font-weight:800;padding:13px 22px;border:0;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn:hover{opacity:.9}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2.t{font-size:clamp(28px,4vw,40px);margin:0 0 28px;letter-spacing:-.01em}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.services h3{margin:0 0 6px;font-size:20px}
+.services p{margin:0;color:var(--muted)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+ol.steps li{counter-increment:s;padding-top:14px;border-top:4px solid var(--tape)}
+ol.steps li::before{content:counter(s);font-weight:800;font-size:28px;display:block}
+ol.steps b{display:block}
+ol.steps span{color:var(--muted);font-size:15px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.ok{display:none;margin-top:14px;font-weight:600}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:800px){.hero,.contact{grid-template-columns:1fr}.services{grid-template-columns:1fr}ol.steps{grid-template-columns:1fr 1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#"><span>zmien</span>adres.com</a>
+  <nav><a href="#uslugi">Usługi</a><a href="#jak">Jak działamy</a><a href="#kontakt">Kontakt</a></nav>
+</header>
+
+<div class="hero">
+  <div>
+    <div class="tape"></div>
+    <h1>Przeprowadzka bez nerwów i bez dopłat.</h1>
+    <p class="lead">Całe mieszkania i pojedyncze zlecenia – kanapa, szafa czy pralka. Wnosimy, pakujemy i przewozimy w Warszawie oraz po całej Polsce. Cena ustalona z góry – taka sama na fakturze.</p>
+    <a class="btn" href="#kontakt">Zamów bezpłatną wycenę</a> <a class="btn" href="tel:+48530005137">Zadzwoń: 530 005 137</a>
+  </div>
+  <div class="calc" aria-live="polite">
+    <h2>Sprawdź orientacyjną cenę</h2>
+    <label for="typ">Rodzaj zlecenia</label>
+    <select id="typ">
+      <option value="150">Pojedyncza rzecz (kanapa, szafa, pralka)</option><option value="300">Kilka dużych rzeczy</option><option value="450">Kawalerka</option>
+      <option value="650" selected>2 pokoje</option>
+      <option value="900">3 pokoje</option>
+      <option value="1300">Dom lub 4+ pokoje</option>
+    </select>
+    <label for="km">Odległość (km)</label>
+    <input id="km" type="number" min="1" max="1000" value="15">
+    <label for="pietra">Piętra bez windy (suma z obu adresów)</label>
+    <input id="pietra" type="number" min="0" max="20" value="0">
+    <label class="chk"><input id="pak" type="checkbox"> Dodaj pakowanie rzeczy</label>
+    <div class="result">Szacunkowo<b id="cena">–</b><small>Dokładną kwotę podamy po krótkiej rozmowie.</small></div>
+  </div>
+</div>
+</div>
+
+<div class="wrap">
+<section id="uslugi">
+  <h2 class="t">Czym się zajmujemy</h2>
+  <div class="services">
+    <div><h3>Pojedyncze zlecenia</h3><p>Kanapa, łóżko, szafa, lodówka, pralka – przewieziemy jedną rzecz lub kilka. Płacisz tylko za to, co zabieramy.</p></div>
+    <div><h3>Przeprowadzki mieszkań i domów</h3><p>Ekipa 2–4 osób, własny samochód, pasy transportowe i koce ochronne w cenie.</p></div>
+    <div><h3>Przeprowadzki firm</h3><p>Biura i sklepy przenosimy w weekendy i nocą, żebyś nie tracił dnia pracy.</p></div>
+    <div><h3>Pianina, sejfy, ciężkie sprzęty</h3><p>Specjalistyczny sprzęt do noszenia po schodach i montaż mebli na nowym miejscu.</p></div>
+  </div>
+</section>
+
+<section id="jak">
+  <h2 class="t">Jak to wygląda</h2>
+  <ol class="steps">
+    <li><b>Zgłoszenie</b><span>Dzwonisz lub wypełniasz formularz. Odpowiadamy w ciągu godziny.</span></li>
+    <li><b>Wycena</b><span>Ustalamy stałą cenę na podstawie listy rzeczy i adresów.</span></li>
+    <li><b>Przeprowadzka</b><span>Ekipa przyjeżdża na czas, zabezpiecza meble i ładuje.</span></li>
+    <li><b>Rozliczenie</b><span>Płacisz po rozładunku. Ubezpieczenie przewożonych rzeczy w cenie.</span></li>
+  </ol>
+</section>
+
+<section id="kontakt">
+  <h2 class="t">Zamów wycenę</h2>
+  <div class="contact">
+    <div>
+      <p class="lead">Podaj telefon i krótki opis, oddzwonimy dziś. Wolisz zadzwonić? Jesteśmy dostępni codziennie od 7:00 do 21:00.</p>
+      <p><b>Telefon:</b> <a href="tel:+48530005137">530 005 137</a><br><b>E-mail:</b> <a href="mailto:zmienadres3@gmail.com">zmienadres3@gmail.com</a></p>
+    </div>
+    <div>
+      <label for="im">Imię</label><input id="im" type="text" autocomplete="name">
+      <label for="tel">Telefon</label><input id="tel" type="tel" autocomplete="tel">
+      <label for="rodzaj">Czego dotyczy zlecenie?</label><select id="rodzaj"><option>Przeprowadzka mieszkania lub domu</option><option>Pojedyncze zlecenie (np. kanapa, szafa, pralka)</option><option>Przeprowadzka firmy</option><option>Inne</option></select>
+      <label for="opis">Skąd, dokąd i kiedy?</label><textarea id="opis" rows="3"></textarea>
+      <button class="btn" id="wyslij" type="button">Wyślij zapytanie</button>
+      <p class="ok" id="ok" role="status"></p>
+    </div>
+  </div>
+</section>
+</div>
+
+<footer><div class="wrap">© 2026 zmienadres.com. Licencja transportowa, ubezpieczenie OC przewoźnika.</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+function calc(){
+  const base=+$('typ').value, km=Math.max(0,+$('km').value||0), fl=Math.max(0,+$('pietra').value||0);
+  let p=base+km*4+fl*60+($('pak').checked?base*0.35:0);
+  const lo=Math.round(p*0.9/10)*10, hi=Math.round(p*1.1/10)*10;
+  $('cena').textContent=lo+' – '+hi+' zł';
+}
+['typ','km','pietra','pak'].forEach(i=>$(i).addEventListener('input',calc));
+calc();
+$('wyslij').addEventListener('click',()=>{
+  const ok=$('ok'),im=$('im').value.trim(),tel=$('tel').value.trim();
+  ok.style.display='block';
+  if(!im||!tel){ok.textContent='Podaj imię i numer telefonu, żebyśmy mogli oddzwonić.';return}
+  const body='Imię: '+im+'\nTelefon: '+tel+'\nRodzaj: '+$('rodzaj').value+'\nOpis: '+$('opis').value;
+  const href='mailto:zmienadres3@gmail.com?subject='+encodeURIComponent('Zapytanie o wycenę – '+im)+'&body='+encodeURIComponent(body);
+  ok.innerHTML='Gotowe – <a href="'+href+'" target="_top">kliknij tutaj, aby otworzyć wiadomość e-mail</a> i ją wysłać. Możesz też zadzwonić: <a href="tel:+48530005137">530 005 137</a>.';
+  location.href=href;
+});
+</script>
+</body>
+</html>
